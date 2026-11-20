@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #101010;
+  color: #eeeeee;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+h1,
+h2 {
+  color: #ffda38;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+a {
+  color: #ffda38;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+.hero {
+  padding: 80px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #202020, #101010);
+  border-radius: 20px;
+}
+
+.hero h1 {
+  font-size: clamp(36px, 6vw, 72px);
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 0 auto 24px;
+}
+
+.hero .btn {
+  margin: 6px;
+}
+
+form {
+  max-width: 600px;
+  background-color: #1c1c1c;
+  padding: 24px;
+  border-radius: 16px;
+  margin: 24px 0;
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #555555;
+  border-radius: 8px;
+  background-color: #101010;
+  color: #eeeeee;
+}
+
+form input:focus,
+form select:focus {
+  outline: 2px solid #ffda38;
+  outline-offset: 2px;
+}
+
+/* Form and table buttons */
+form button,
+table button {
+  padding: 10px 18px;
+  border: 0;
+  border-radius: 8px;
+  background-color: #ffda38;
+  color: #101010;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+table button {
+  margin: 4px;
+}
+
+form button:hover,
+table button:hover {
+  background-color: #ffe978;
+  transform: translateY(-2px);
+}
+
+
+table {
+  width: 100%;
+  margin: 24px 0;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 14px;
+  border-bottom: 1px solid #444444;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+th {
+  background-color: #242424;
+  color: #ffda38;
+}
+
+td {
+  background-color: #181818;
+}
+
+
+#result {
+  margin-top: 24px;
+  color: #ffda38;
+  font-size: 20px;
+}
+
+
+
+.gallery img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+main {
+  animation: fadeIn 0.6s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  main { animation: none; }
+}
+footer {
+  padding: 20px;
+  text-align: center;
+}
